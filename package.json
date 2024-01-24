@@ -1,0 +1,34 @@
+{
+  "name": "charge-vesting",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "local-network:run": "npx hardhat node",
+    "local-network:deploy": "npm run compile && npx hardhat run --network localhost scripts/deployAll.js",
+    "fork-network:deploy": "npm run compile && npx hardhat run --network fork scripts/deployAll.js",
+    "local-network:clean": "rm -rf artifacts && rm -rf cache",
+    "test": "npx hardhat test --network hardhat"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-truffle5": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.9.5",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.4",
+    "dotenv": "^16.3.2",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "mocha": "^9.1.3",
+    "web3": "^1.6.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.9.5"
+  }
+}
