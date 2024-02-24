@@ -1,8 +1,25 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Setup
+## Intro to Solidity Employee Salary Claim contracts
 
-### Install dependencies
+Welcome to the Employee Salary Claim contracts repository. The main aim of the application is to allow the employer (administrator) to create tasks for employees with deadlines and stage periods. Stage period, which must be approved by employer is kind of a gateway which opens for employees ability to claim their funds for specific period, and then repeatedly claim remain on specified period till all payment will be issued.
+
+# Linked
+
+Repository for application, which works in conjunction with the contracts - [here](https://github.com/vodis/employee_salary_claim_app)
+
+## Available Main Scripts
+
+In the project directory, you can run:
+
+### `npm run local-network:run`
+
+Runs local Ethereum network node.<br>
+Read article [Hardhat Network](https://hardhat.org/hardhat-network/docs/overview) to get more details.
+
+### `npm run local-network:deploy`
+
+Compiles and deployed contracts described in `deployAll` script.
 
 `npm install`
 
@@ -22,12 +39,12 @@ ChargeVesting 0x61A3Ae286188e82d6E27567348F6a23f21939D9D
 ### Localhost Network
 
 supperAdmin 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
-Erc20Mock 0x15F2ea83eB97ede71d84Bd04fFF29444f6b7cd52
+Erc20Mock 0x31403b1e52051883f2Ce1B1b4C89f36034e1221D
 
-EmployeeManager 0x0B32a3F8f5b7E5d315b9E52E640a49A89d89c820
-EmployeeRateModel 0xF357118EBd576f3C812c7875B1A1651a7f140E9C
+EmployeeManager 0x4278C5d322aB92F1D876Dd7Bd9b44d1748b88af2
+EmployeeRateModel 0x0D92d35D311E54aB8EEA0394d7E773Fc5144491a
 
-TaskManager 0x519b05b3655F4b89731B677d64CEcf761f4076f6
-TaskRateModel 0x057cD3082EfED32d5C907801BF3628B27D88fD80
+TaskManager 0x24EcC5E6EaA700368B8FAC259d3fBD045f695A08
+TaskRateModel 0x876939152C56362e17D508B9DEA77a3fDF9e4083
 
-ChargeVesting 0xb6057e08a11da09a998985874FE2119e98dB3D5D
+ChargeVesting 0xD56e6F296352B03C3c3386543185E9B8c2e5Fd0b
